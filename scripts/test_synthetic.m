@@ -5,7 +5,7 @@
 addpath('Baselines/');
 
 %filename = '../data/pred_synthetic_rot_another2.h5'; 
-filename = '../data/pred_syn_rot2.h5'; 
+filename = '../data/neurora_9.h5'; 
 % filename = '../data/pred_syn_rot_nocleannet.h5'; 
 
 err1 = []; 
@@ -19,7 +19,7 @@ ell1 = [];
 ell2 = []; 
 ell3 = []; 
 
-no_images = 100; 
+no_images = 1; 
 for i = 1:no_images 
     RInit = [];
     R = [];

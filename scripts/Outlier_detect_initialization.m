@@ -5,18 +5,20 @@
 clear; 
 
 %file = 'gt_graph_random_fine'; 
- file = 'gt_graph_random_large_outliers';
-file = 'gt_graph_random_large_outliers_test';
+%file = 'gt_graph_random_large_outliers';
+%file = 'gt_graph_random_large_outliers_test';
 % file = 'gt_graph_random_large_outliers_real';
 % file = 'gt_graph_random_large_outliers2'; 
 % file = 'gt_graph_random_large_landmark10k2'; 
 % file = 'gt_graph_random_large_landmark10k'; 
-filename = ['../data/', file,'_pred_rot.h5']; 
+%filename = ['../data/', file,'_pred_rot.h5']; 
 %h5disp(filename); 
 
-filename2 = ['../data/', file, '.h5']; 
+%filename2 = ['../data/', file, '.h5']; 
+filename = '../data/cleannet_test_9.h5';
+output_filename = '../data/bootstrapped_test_9.h5';
 
-no_images = 100; 
+no_images = 1; 
 val_pred = []; 
 val_pred1 = []; 
 val_pred2 = []; 
@@ -139,7 +141,7 @@ legend('Weiszfeld');
 %%
 no_images = count - 1; 
 
-filename = ['../data/', file, '_updated_nocleannet.h5']; 
+filename = output_filename; 
 % 1.2498    1.1505    1.3920    0.0912 % for the fine algorithm 
 % 1.0780    0.9828    1.1820
 
